@@ -5,7 +5,7 @@ export default function Start({ onStart }) {
             <p className="text-gray-600">Welcome to the</p>
             <h1 className="text-4xl font-bold">Quizart</h1>
             <p className="text-gray-600">Choose your theme to begin</p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 sm:flex-nowrap flex-wrap justify-center items-center">
                 <button
                     onClick={() => onStart("artist")}
                     className="px-6 py-3 w-35 bg-blue-500 text-white rounded-lg hover:bg-blue-600 cursor-pointer"
@@ -16,7 +16,7 @@ export default function Start({ onStart }) {
                     onClick={() => onStart("movement")}
                      className="px-6 py-3 w-35 bg-blue-500 text-white rounded-lg hover:bg-blue-600 cursor-pointer"
                 >
-                    Art Movements
+                    Movements
                 </button>
             </div>
         </div>

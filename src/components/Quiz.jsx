@@ -123,7 +123,7 @@ export default function Quiz() {
     }
 
     return (
-        <div className="flex flex-col justify-center items-center gap-6 p-6 max-h-screen">
+        <div className="flex flex-col justify-center items-center gap-6 p-6 max-h-screen h-fit">
             <Card
                 imageSrc={currentArt.image}
                 flipped={selected}

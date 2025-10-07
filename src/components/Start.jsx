@@ -1,7 +1,7 @@
 export default function Start({ onStart }) {
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen gap-6 text-center">
+        <div className="flex flex-col items-center justify-center h-screen gap-6 text-center p-2">
             <p className="text-gray-600">Welcome to the</p>
             <h1 className="text-4xl font-bold">Quizart</h1>
             <p className="text-gray-600">Choose your theme to begin</p>

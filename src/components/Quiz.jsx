@@ -156,14 +156,15 @@ export default function Quiz() {
             <p className="ms:mt-4 text-sm text-gray-600 text-center">
                 Pergunta {currentIndex + 1} de {quizData.length} | Pontuação: {score}
             </p>
-            {selected && (
-                <button
-                    onClick={() => handleNext()}
-                    className="ms:mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 cursor-pointer"
-                >
-                    Próxima
-                </button>
-            )}
+            <div className="ms:mt-4 h-15">
+                {selected && (
+                    <button
+                        onClick={() => handleNext()}
+                        className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 cursor-pointer">
+                        Próxima
+                    </button>
+                )}
+            </div>
         </div>
     );
 }
